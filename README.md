@@ -8,7 +8,8 @@ Testing in Flutter is crucial for ensuring the reliability, stability, and funct
 2. Widget Testing
 3. Integration Testing
 4. End-to-End Testing
-Each method has its unique advantages and use cases.
+
+Each method has its unique advantages and use cases. And all of these methods fall under automated testing.
 
 ## 1. Unit Testing
 

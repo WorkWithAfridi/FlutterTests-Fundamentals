@@ -15,6 +15,7 @@
 /// The `testWidgets` function is used to write widget tests in Flutter. It takes a description of the
 /// test case as the first argument and a callback function as the second argument. The callback
 /// function takes a `tester` object as a parameter, which is used to interact with and test the UI.
+
 //   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
 //     // Build our app and trigger a frame.
 //     await tester.pumpWidget(const MyApp());
