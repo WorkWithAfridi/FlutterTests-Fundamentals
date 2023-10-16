@@ -6,7 +6,7 @@ import 'package:flutter_tests/widget_test/counter_app/counter_app.dart';
 // Testing in isolation
 
 void main() {
-  // Given-When-Then
+  // Increment FAB button widget test
   testWidgets(
     'Given: Counter is zero. When: Increment button is clicked. Then: Counter should be one.',
     (tester) async {
@@ -50,6 +50,7 @@ void main() {
     },
   );
 
+  // Decrement FAB button widget test
   testWidgets(
     'Given: Counter is zero. When: Decrement button is clicked. Then: Counter should be minus one.',
     (tester) async {
