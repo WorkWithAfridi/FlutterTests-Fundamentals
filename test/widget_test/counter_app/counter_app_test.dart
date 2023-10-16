@@ -27,19 +27,20 @@ void main() {
       expect(count, findsNothing);
 
       // Now lets find the FAB and connect it
-      final fab = find.byType(FloatingActionButton); // Works when we only have one FAB in MyHomePage
+      // final fab = find.byType(FloatingActionButton); // Works when we only have one FAB in MyHomePage
 
       // When we have two of the same widgets then in that case we need to use KEYS to distinguish them
       final incFab = find.byKey(
         const Key("Increment"),
       ); // Searches for widget with the similar key
-      final decFab = find.byKey(
-        const Key("Decrement"),
-      ); // Searches for widget with the similar key
+
+      // final decFab = find.byKey(
+      //   const Key("Decrement"),
+      // ); // Searches for widget with the similar key
 
       // tester helps us to simulate user interactions
       // user interactions are always async...
-      await tester.tap(fab);
+      await tester.tap(incFab);
 
       await tester.pump(); // Calling pump refreshes the widget.
 
