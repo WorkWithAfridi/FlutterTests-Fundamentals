@@ -12,7 +12,7 @@ void main() {
     (tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: MyHomePage(
+          home: CounterAppWidgetTest(
             title: "This is a mock widget test.",
           ),
         ),
@@ -56,7 +56,7 @@ void main() {
     (tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: MyHomePage(
+          home: CounterAppWidgetTest(
             title: "This is a mock widget test.",
           ),
         ),

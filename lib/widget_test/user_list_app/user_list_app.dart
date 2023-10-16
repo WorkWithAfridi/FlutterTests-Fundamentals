@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'api_repo/user_repository.dart';
 import 'model/user_model.dart';
 
-class UserListApp extends StatefulWidget {
+class UserListAppWidgetTest extends StatefulWidget {
   final Future<List<User>> futureUsers;
-  const UserListApp({
+  const UserListAppWidgetTest({
     super.key,
     required this.futureUsers,
   });
 
   @override
-  State<UserListApp> createState() => _HomeScreenState();
+  State<UserListAppWidgetTest> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<UserListApp> {
+class _HomeScreenState extends State<UserListAppWidgetTest> {
   final UserRepository userRepository = UserRepository();
 
   @override

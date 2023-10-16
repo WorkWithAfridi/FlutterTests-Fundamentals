@@ -22,7 +22,7 @@ void main() {
       // Pump widget to render the UI
       await tester.pumpWidget(
         MaterialApp(
-          home: UserListApp(
+          home: UserListAppWidgetTest(
             // futureUsers: UserRepository().fetchUsers(),
             // // WE cannot make network calls while writing test cases, best use mocked data!
             futureUsers: mockFetchUsers(), // Gets mocked used list data
@@ -46,7 +46,7 @@ void main() {
       // Pump widget to render the UI
       await tester.pumpWidget(
         MaterialApp(
-          home: UserListApp(
+          home: UserListAppWidgetTest(
             // futureUsers: UserRepository().fetchUsers(),
             // // WE cannot make network calls while writing test cases, best use mocked data!
             futureUsers: mockFetchUsers(), // Gets mocked used list data
