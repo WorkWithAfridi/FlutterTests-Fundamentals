@@ -12,8 +12,11 @@ void main() {
   setUpAll(() => null); // Called once before all the test case in the current main function. Runs 1 time.
 
   // Post test functions - These are ran after all the test cases in this main function has been completed.
-  tearDown(() => null);
-  tearDownAll(() => null);
+  tearDown(() => null); // Called after every test cases. Runs N times.
+  tearDownAll(() => null); // Called once after all the test case in the current main function. Runs 1 time.
+
+  // Purpose: These methods help you set up and tear down resources needed for your tests.
+  // setUp is executed before each test, while tearDown is executed after each test.
 
   // Running single functions just runs and tests that specific funtion.
   test(
