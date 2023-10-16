@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tests/widget_test/user_list_app/api_repo/user_repository.dart';
-
-import 'widget_test/user_list_app/user_list_app.dart';
+import 'package:flutter_tests/unit_test/counter_app/counter_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: UserListAppWidgetTest(
-        futureUsers: UserRepository().fetchUsers(),
-      ),
+      home: const CounterAppUnitTest(),
     );
   }
 }

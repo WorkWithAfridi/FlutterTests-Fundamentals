@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tests/unit_test/counter_app/counter_controller.dart';
 
 // For Counter - Widget Test
 
-class CounterAppWidgetTest extends StatefulWidget {
-  const CounterAppWidgetTest({
-    super.key,
-  });
+class CounterAppUnitTest extends StatefulWidget {
+  const CounterAppUnitTest({super.key});
 
   @override
-  State<CounterAppWidgetTest> createState() => _CounterAppWidgetTestState();
+  State<CounterAppUnitTest> createState() => _CounterAppUnitTestState();
 }
 
-class _CounterAppWidgetTestState extends State<CounterAppWidgetTest> {
-  int _counter = 0;
+class _CounterAppUnitTestState extends State<CounterAppUnitTest> {
+  final CounterController counterController = CounterController();
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      counterController.incrementCounter();
     });
   }
 
   void _decrementCounter() {
     setState(() {
-      _counter--;
+      counterController.decrementCounter();
     });
   }
 
@@ -31,7 +30,7 @@ class _CounterAppWidgetTestState extends State<CounterAppWidgetTest> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Flutter Widget Test"),
+        title: const Text("Flutter Unit Test"),
       ),
       body: Center(
         child: Column(
@@ -41,7 +40,7 @@ class _CounterAppWidgetTestState extends State<CounterAppWidgetTest> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '${counterController.count}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
