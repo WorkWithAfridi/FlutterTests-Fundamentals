@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_tests/widget_test/user_list_app/api_repo/user_repository.dart';
-import 'package:flutter_tests/widget_test/user_list_app/model/user_model.dart';
+import 'package:flutter_tests/unit_test/user_list_app/api_repo/user_repository.dart';
+import 'package:flutter_tests/unit_test/user_list_app/model/user_model.dart';
 
 void main() {
   late UserRepository userRepository;
