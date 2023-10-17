@@ -14,7 +14,7 @@ void main() {
         const MaterialApp(
           home: CounterAppWidgetTest(),
         ),
-      ); // Pump wiget - Renders the UI
+      ); // Pump wiget - Renders the UI / Loads the UI
 
       // Scans the entire UI to find for the given text/ String
       var count = find.text('0');
