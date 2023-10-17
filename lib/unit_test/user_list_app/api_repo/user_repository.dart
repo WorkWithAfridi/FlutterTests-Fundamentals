@@ -5,8 +5,10 @@ import 'package:http/http.dart' as http;
 import '../model/user_model.dart';
 
 class UserRepository {
+  final http.Client client;
+  UserRepository(this.client);
   Future<List<User>> fetchUsers() async {
-    final response = await http.get(
+    final response = await client.get(
       Uri.parse(
         'https://jsonplaceholder.typicode.com/users',
       ),

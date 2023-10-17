@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 import 'api_repo/user_repository.dart';
 import 'model/user_model.dart';
@@ -15,7 +16,7 @@ class UserListAppWidgetTest extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<UserListAppWidgetTest> {
-  final UserRepository userRepository = UserRepository();
+  final UserRepository userRepository = UserRepository(http.Client());
 
   @override
   Widget build(BuildContext context) {
